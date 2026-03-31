@@ -1,9 +1,13 @@
 <html>
 <head>
 	<title> Registration Form </title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
 	<h1> REGISTRATION FORM </h1>
+
+
 	<from method="post">
 	<label> Full Name: </label> <br>
 	<input type="text" id="name" name="name" required> <br> <br>
@@ -15,10 +19,11 @@
 	<input type="password" id="pwd" name="password" required> <br> <br>
 
 	<label> Gender: </label>  <br>
+	<div class="gender">
 	<input type="radio" value="male"> Male <br>
 	<input type="radio" value="female"> Female <br>
 	<input type="radio" value="Other"> Other <br>
-	<br>
+	 </div> <br>
 
 	<label> Course/Interest: </label> <br>
 	<select id="course" name="course">
@@ -31,5 +36,8 @@
 		</select> <br> <br>
 
 	<input type="submit" value="Submit">
+</form>
+</div>
+
 </body>
 </html>
